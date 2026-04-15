@@ -35,30 +35,12 @@ header nav {
 
 }
 
-ul.big-screen li a {
-    display: none;
-}
-
-ul.mobile-dropdown {
-    display: flex; 
-    flex-direction: column;
-    gap: 0.5rem;
-    position: absolute;
-    right: 0;
-    top: 100%;
-    background-color: blanchedalmond;
-    border-left: 2px solid rgba(111, 8, 17, 0.3);
-    border-bottom: 2px solid rgba(111, 8, 17, 0.3);
-    border-top: 2px solid rgba(111, 8, 17, 0.3);
-    width: 25%;
-    height: calc(100vh-5rem);
-}
-
 .logo {
     display: flex;
     gap: 7px;
     align-items: center;
 }
+
 
 .logo span:nth-child(1) {
     background-color: brown;
@@ -79,4 +61,43 @@ ul.mobile-dropdown {
     font-weight: 600;
     font-style: oblique;
 
+}
+ul.big-screen li a {
+    display: none;
+}
+
+ul.mobile-dropdown {
+    display: none; 
+    flex-direction: column;
+    gap: 0.5rem;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background-color: blanchedalmond;
+    border-left: 2px solid rgba(111, 8, 17, 0.3);
+    border-bottom: 2px solid rgba(111, 8, 17, 0.3);
+    border-top: 2px solid rgba(111, 8, 17, 0.3);
+    padding: 5px;
+    width: 25%;
+    height: calc(100vh-5rem);
+}
+
+.mobile-dropdown li a {
+    font-size: 13px;
+    font-weight: 600;
+    color: brown;
+
+}
+
+.mobile button {
+    font-size: 1.5rem;
+    background-color: chocolate;
+    color: bisque;
+    border: none;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+.mobile:hover .mobile-dropdown {
+    display: flex;
 }
