@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 ul li {
@@ -78,6 +79,7 @@ ul.mobile-dropdown {
     border-top: 2px solid rgba(111, 8, 17, 0.3);
     padding: 5px;
     width: 25%;
+    max-width: 25rem;
     height: calc(100vh-5rem);
 }
 
@@ -106,7 +108,8 @@ ul.mobile-dropdown {
     flex-direction: column;
     font-size: 12px;
     width: 100%;
-    min-height: calc(100vh-5rem)
+    max-width: 25rem;
+    min-height: calc(100vh-5rem);
 }
 
 .header-big-screen {
@@ -115,6 +118,7 @@ ul.mobile-dropdown {
 .header-mobile {
     background-color: rgba(0, 0, 0, 0.7);
     width: 100%;
+    max-width: 25rem;
     height: 80px;
     display: flex;
     flex-direction: column;
@@ -143,7 +147,51 @@ ul.mobile-dropdown {
     padding: 0.8rem;
     border-radius: 15px;
 }
+.about {
+    display:grid;
+    margin: 2rem 0;
+    width: 100%;
+    max-width: 25rem;
+    gap: 1rem;
+    font-size: 15px;
+    font-size: 600;
+}
+    
+.about-intro {
+    background-color: bisque;
+    display: grid;
+    padding: 1rem 1rem;
+    gap: 0.5rem;
+    width: 90%;
+    max-width: 25rem;
+}
 
+.about-content {
+    display: grid;
+    margin: 1rem;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, auto);
+}
+
+.about-content div {
+    border: 1px solid black;
+    border-radius: 20px;
+    height: 300px;
+    width: 90%;
+    max-width: 25rem;
+}
+
+.about-content div:nth-child(1) {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.about-content div:nth-child(2) {
+    object-fit: cover;
+}
 @media (min-width: 768px) {
     .mobile {
         display: none;
@@ -186,6 +234,7 @@ ul.mobile-dropdown {
         font-size: 12px;
         width: 100%;
         min-height: calc(100vh-5rem);
+       max-width: 95rem;
     }
 
     .header-mobile {
@@ -269,6 +318,7 @@ ul.mobile-dropdown {
     }
     .hero a {
         background-color: crimson;
+        color: rgb(0, 0, 0, 0.7);
         font-size: 40px;
         border-radius: 25px;
     }
