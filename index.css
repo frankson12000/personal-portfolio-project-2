@@ -225,6 +225,10 @@ ul.mobile-dropdown {
     
 }
 .skills h2 {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    align-items: center;
     margin: 1rem 2rem;
     color: brown;
 }
@@ -242,7 +246,7 @@ ul.mobile-dropdown {
 
 .contact {
     display: grid;
-    gap: 2rem;
+    gap: 1rem;
     margin: 2rem 2rem;
 }
 
@@ -307,6 +311,10 @@ ul.mobile-dropdown {
     min-height: 7rem;
     padding: 0.5rem;
     height: 3rem;
+    border-radius: 20px;
+    border: none;
+    color: bisque;
+    font-weight: 600;
 }
 
 .form-content button {
@@ -324,6 +332,28 @@ ul.mobile-dropdown {
 .form-content button:hover {
     filter: brightness(0.5)
 }
+
+.contact-info {
+    background-color: orange;
+    color: blanchedalmond;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    gap: 1rem;
+    padding: 2rem 1rem;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.links a {
+    text-decoration: none;
+    color: brown;
+}
+
 @media (min-width: 768px) {
     .mobile {
         display: none;
@@ -449,11 +479,69 @@ ul.mobile-dropdown {
     .skills h2 {
         font-size: 30px;
         font-weight: 600;
+        color: blue;
     }
 
     .skills-content div:hover {
         background-color: brown;
         color: wheat;
+    }
+
+    .contact {
+        gap: 1rem;
+        margin: 4rem 2rem;
+    }
+
+    .contact-intro h2 {
+        color: blue;
+        font-size: 35px;
+    }
+
+    .contact-intro p {
+        font-size: 1.3rem;
+        font-weight: 600;
+    }
+
+    .form {
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
+
+    .form-content {
+        padding: 2rem;
+        max-width: 40rem;
+        background-color: blue;
+        color: aliceblue;
+        border-radius: 50px;
+    }
+
+    .form-content label {
+        font-size: 20px;
+    }
+
+    .form-content button {
+        color: blue;
+        padding: 1rem 1.5rem;
+        font-size: 18px;
+    }
+
+    .contact-info {
+        background-color: blue;
+        border-radius: 50px;
+        font-size: 20px;
+        gap: 1rem;
+        padding: 2rem;
+    }
+
+   .links {
+        gap: 1rem;
+    }
+
+    .links a {
+        text-decoration: none;
+        color: aliceblue;
     }
 
 }
@@ -519,7 +607,7 @@ ul.mobile-dropdown {
     }
 
     .about-intro h2 {
-        color: blue;
+        color: brown;
     }
     
     .about-content div {
@@ -541,6 +629,49 @@ ul.mobile-dropdown {
     }
     .about-content2 h3 {
         color: brown;
+    }
+
+    .skills-content div {
+        background-color: brown;
+    }
+
+    .skills h2 {
+        font-size: 40px;
+        color: red;
+    }
+
+    .contact-intro h2 {
+        color: red;
+        font-size: 45px;
+    }
+
+    .contact-intro p {
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+    .form-content {
+        max-width: 80rem;
+        background-color: brown;
+    }
+
+    .form-content label {
+        font-size: 30px;
+    }
+
+    .form-content button {
+        color: red;
+        padding: 1rem 1.5rem;
+        font-size: 18px;
+    }
+
+    .contact-info {
+        background-color: brown;
+        font-size: 25px;
+    }
+
+    .contact-info h3 {
+        font-size: 30px;
     }
 }
 
