@@ -1,3 +1,4 @@
+<!------NWANKWO FRANCIS NNACHEDO-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,40 +8,37 @@
     <link rel="stylesheet" href="./index.css">
 
     <!----font awsome cdn-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <!----Google fonts-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=grid_view" />
-
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 <header>
     <nav>
 
-    <div class="logo">
-        <span>F</span>
-        <span>Nwankwo</span>
-    </div>
+      <div class="logo">
+          <span>F</span>
+          <span>Nwankwo</span>
+      </div>
 
-    <ul class="big-screen">
-        <li> <a href="#home">Home</a> </li>
-        <li> <a href="#about">About</a> </li>
-        <li> <a href="#skills">Skills</a> </li>
-        <li> <a href="#projects">Projects</a> </li>
-        <li> <a href="#contact">Contact</a> </li>
-    </ul>
+      <ul class="big-screen">
+         <li> <a href="#home">Home</a> </li>
+         <li> <a href="#about">About</a> </li>
+         <li> <a href="#skills">Skills</a> </li>
+         <li> <a href="#projects">Projects</a> </li>
+         <li> <a href="#contact">Contact</a> </li>
+      </ul>
+
+      <div class="mobile">
+          <button><i class="fa-solid fa-bars"></i></button>
+          <ul class="mobile-dropdown">
+             <li> <a href="#home">Home</a> </li>
+             <li> <a href="#about">About</a> </li>
+             <li> <a href="#skills">Skills</a> </li>
+             <li> <a href="#projects">Projects</a> </li>
+             <li> <a href="#contact">Contact</a> </li>
+          </ul>
+      </div>
     
-    <div class="mobile">
-        <button> <i class="fa-solid fa-bars"> </i> </button>
-    <ul class="mobile-dropdown">
-        <li> <a href="#home">Home</a> </li>
-        <li> <a href="#about">About</a> </li>
-        <li> <a href="#skills">Skills</a> </li>
-        <li> <a href="#projects">Projects</a> </li>
-        <li> <a href="#contact">Contact</a> </li>
-    </ul>
-    </div>
-
     </nav>
 </header>
 
@@ -59,7 +57,7 @@
             <h2>Aspiring Full-Stack Developer</h2>
         </div>
         <img src="./image/my passport.jpg">
-        <a href="#projects">View my Work</a>
+        <a href="#projects">View my Work <i class="fa-solid fa-arrow-right-long"></i> </a>
     </section>
 
     <section class="about" id="about">
@@ -96,33 +94,61 @@
     <section class="skills" id="skills">
         <h2>My Skills</h2>
         <div class="skills-content">
-           <div class="box1">
-            <button><i class="fa-brands fa-html5"></i></button>
-            <h3>Html</h3>
+
+           <div class="skills1">
+             <div><i class="fa-brands fa-html5"></i></div>
+             <h3>Html</h3>
            </div>
 
-           <div>
-            <button><i class="fa-brands fa-css"></i></button>
-            <h3>Css</h3>
-           </div>
-              
-           <div>
-            <button><i class="fa-solid fa-grip"></i></button>
-            <h3>Grid</h3>
+            <div class="skills2">
+             <div><i class="fa-brands fa-css3"></i></div>  
+             <h3>Css</h3>
+            </div>
+             
+           <div class="skills3">
+             <div><i class="fa-solid fa-grip"></i></div>
+             <h3>Grid</h3>
            </div>
 
-           <div>
-             <button><i class="fa-brands fa-square-git"></i></button>
+           <div class="skills4">
+             <div><i class="fa-brands fa-git"></i></div>
              <h3>Git</h3>
            </div>
 
-           <div>
-             <button><i class="fa-brands fa-github"></i></button>
+           <div class="skills5">
+             <div><i class="fa-brands fa-github"></i></div>
              <h3>Github</h3>
            </div>
 
         </div>
         
+    </section>
+
+    <section>
+        <h2>My Project</h2>
+        <div>
+            <div>
+                <h3>My First Personal Project</h3>
+                <p>The is the first project i did, i built a personal profile using Html.
+                </p>
+                <img src="./image/my-personal-profile.jpg" alt="My Profile Page">
+                <a href="">Personal Profile</a>
+            </div>
+            <div>
+                <h3>My First Group Project</h3>
+                <p>The is the first group project i did with my group, using Html the work is a landing page for a clinic Website.
+                </p>
+                <img src="./image/lifecare-health-center.jpg" alt="">
+                <a href="">LifeCare Health Centre</a>
+            </div>
+            <div>
+               <h3>My Class Work</h3>
+                <p>The is the work i did in conjuction with my tutor at turing tech; while the calss was ongoing, using Html, Css and Grid. The work was a combination of the application of the basic knowledge acquired at the time.
+                </p>
+                <img src="./image/man-on-computer.jpg" alt="image of a Man working on Computer">
+                <a href="">Example of Responsive Design</a>
+            </div>
+        </div>
     </section>
 
     <section class="contact" id="contact">
@@ -151,8 +177,8 @@
            </div>
 
            <div class="message-field">
-              <label for="message-field">Messaage Field</label>
-              <textarea id="message-field">Enter your Messsage here
+              <label for="message-field">Message Field</label>
+              <textarea id="message-field">Enter your Message here
               </textarea>
            </div>
 
@@ -161,26 +187,58 @@
         </div>
         <div class="contact-info">
             <h3>Contact Info:</h3>
+            <h4>Email: frankson12000@gmail.com</h4>
 
-           <div class="links">
-
-           <a href="https://github.com/frankson12000/francis-ensg-turingtech">
-            Github
-           </a>
-
-           <a href="https://x.com/hon_nwankwo">
-            Twitter
-           </a>
+          <div class="links">
+             
+             <a href="https://github.com/frankson12000/francis-ensg-turingtech"> Github <i class="fa-brands fa-github"></i>
             
-           <a href="https://www.linkedin.com/in/francis-nwankwo-a096662b0?utm_source=share_via&utm_content=profile&utm_medium=member_android">
-            Linkedin
-           </a>
+             </a>
+
+             <a href="https://x.com/hon_nwankwo"> Twitter<i class="fa-brands fa-x-twitter"></i>
+             </a>
+            
+             <a href="https://www.linkedin.com/in/francis-nwankwo-a096662b0?utm_source=share_via&utm_content=profile&utm_medium=member_android">
+             Linkedin <i class="fa-brands fa-linkedin"></i>
+             </a>
            </div>
         </div>
         </form>
         
     </section>
     </main>
+
+    <footer>
+       <div class="footer">
+        <ul class="footer-nav">
+         <li> <a href="#home">Home</a> </li>
+         <li> <a href="#about">About</a> </li>
+         <li> <a href="#skills">Skills</a> </li>
+         <li> <a href="#projects">Projects</a> </li>
+         <li> <a href="#contact">Contact</a> </li>
+      </ul>
+
+      <div class="footer-links">
+             
+             <a href="https://github.com/frankson12000/francis-ensg-turingtech"> Github <i class="fa-brands fa-github"></i>
+            
+             </a>
+
+             <a href="https://x.com/hon_nwankwo"> Twitter<i class="fa-brands fa-x-twitter"></i>
+             </a>
+            
+             <a href="https://www.linkedin.com/in/francis-nwankwo-a096662b0?utm_source=share_via&utm_content=profile&utm_medium=member_android">
+             Linkedin <i class="fa-brands fa-linkedin"></i>
+             </a>
+           </div>
+           <div class="footer-top">
+            <a href="#top"><i class="fa-solid fa-arrow-up"></i> Scroll to Top</a>
+           </div>
+
+        <div class="footer-content">&copy; 2026 Nwankwo Francis. All rights reserved.</div>
+
+        </div>
+    </footer>
     
 </body>
 </html>
